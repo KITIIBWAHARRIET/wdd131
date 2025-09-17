@@ -2,22 +2,30 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
+  <meta name="description" content="Learn about Uganda's population, capital, languages, and weather on this informative country page.">
+  <meta name="author" content="Harriet Kitii Bwaha">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your Place</title>
+  <title>UGANDA-Acountry full of peace</title>
   <link rel="stylesheet" href="styles/place.css">
   <script src="scripts/place.js" defer></script>
 </head>
 <body>
   <!-- Layout based on wireframe -->
   <header>
-    <h1>UGANDA</h1>
+    <h1>UGANDA-Acountry full of peace</h1>
   </header>
 
   <main>
-    <section class="hero">
-      <!-- Responsive image with srcset -->
-      <img src="images/hero.webp"
-    </section>
+    <picture>
+  <source srcset="images/hero-small.webp 500w,
+                  images/hero-medium.webp 1000w,
+                  images/hero-large.webp 1500w"
+          type="image/webp">
+  <img src="images/hero.webp" alt="Uganda landscape">
+</picture>
+
 
     <section class="data">
       <h2>Data</h2>
@@ -35,6 +43,11 @@
       <p>Wind Speed: <span id="speed">5</span> mph</p>
       <p>Wind Chill: <span id="windchill"></span></p>
     </section>
+    <!-- Mobile Weather Icon -->
+<span class="icon">
+  <img src="images/weather.svg" alt="Partly cloudy icon">
+</span>
+
   </main>
 
   <footer>
