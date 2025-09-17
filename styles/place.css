@@ -1,0 +1,46 @@
+:root {
+  --primary: #006a4e;  /* Example: Bangladesh green */
+  --secondary: #f42a41; /* Example: Bangladesh red */
+  --text: #333;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  color: var(--text);
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+  background: var(--primary);
+  color: white;
+  text-align: center;
+  padding: 1rem;
+}
+
+.hero img {
+  width: 100%;
+  display: block;
+}
+
+.weather h2::after {
+  content: " ⛅"; /* pseudo-element for desktop */
+}
+
+@media (max-width: 600px) {
+  .weather h2::after {
+    content: ""; /* remove pseudo icon */
+  }
+  .icon {
+    background: url('../images/weather.svg') no-repeat center;
+    display: inline-block;
+    width: 24px;
+    height: 24px;
+  }
+}
+.data{
+    text-align: center;
+}
+.weather{
+    text-align: center;
+}
