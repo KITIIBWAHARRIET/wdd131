@@ -1,15 +1,31 @@
-@media (min-width: 768px) {
-    nav {
-        display: flex !important;
-        flex-direction: row;
-        gap: 1rem;
-    }
+/* temples-large.css - Larger Screens */
 
-    #hamburger {
-        display: none;
-    }
-
+@media (min-width: 600px) {
     .temple-gallery {
-        grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+        grid-template-columns: repeat(2, 1fr); /* 2 per row on tablets */
+    }
+}
+
+@media (min-width: 900px) {
+    .temple-gallery {
+        grid-template-columns: repeat(3, 1fr); /* 3 per row on desktops */
+    }
+}
+
+/* Show hamburger menu only on small screens */
+@media (max-width: 600px) {
+    #hamburger {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        background-color: #4b007d;
+        padding: 1rem;
+    }
+
+    nav.show {
+        display: flex;
     }
 }
