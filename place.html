@@ -3,22 +3,20 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  
-  <!-- Improved title for specificity -->
   <title>Uganda: Population, Capital, Languages, and Weather</title>
-  
-  <!-- Improved meta description -->
   <meta name="description" content="Explore Uganda's capital, population statistics, languages, and weather patterns on this informative country page.">
-  <meta name="author" content="Harriet Kitii Bwaha">
-  
-  <!-- Google Fonts using <link> (avoid @import) -->
+  <meta name="author" content="Harriet Kitiibwa">
+
+  <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
 
-  <!-- External CSS -->
+  <!-- Your custom CSS -->
   <link rel="stylesheet" href="styles/place.css">
 
-  <!-- External JS -->
+  <!-- Your JavaScript -->
   <script src="scripts/place.js" defer></script>
+</head>
+"scripts/place.js" defer></script>
 </head>
 
 <body>
@@ -30,12 +28,18 @@
   <main>
     <!-- Hero Image -->
     <picture>
-      <source srcset="images/hero-small.webp 500w,
-                      images/hero-medium.webp 1000w,
-                      images/hero-large.webp 1500w"
-              type="image/webp">
-      <img src="images/hero.webp" alt="Scenic landscape of Uganda">
-    </picture>
+  <source 
+    srcset="
+      images/hero-small.webp 500w,
+      images/hero-medium.webp 1000w,
+      images/hero-large.webp 1500w"
+    sizes="(max-width: 600px) 500px,
+           (max-width: 1200px) 1000px,
+           1500px"
+    type="image/webp">
+  <img src="images/hero.webp" alt="Scenic landscape of Uganda" width="1500" height="800">
+</picture>
+
 
     <!-- Data Section -->
     <section class="data">
@@ -53,11 +57,27 @@
 
     <!-- Weather Section -->
     <section class="weather">
-      <h2>Weather <span class="icon"></span></h2>
-      <p>Temperature: <span id="temp">10</span>°F</p>
-      <p>Wind Speed: <span id="speed">5</span> mph</p>
-      <p>Wind Chill: <span id="windchill"></span></p>
-    </section>
+  <h2>
+    Weather 
+    <!-- Inline SVG icon for sun -->
+    <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+      <circle cx="12" cy="12" r="5"></circle>
+      <line x1="12" y1="1" x2="12" y2="3"></line>
+      <line x1="12" y1="21" x2="12" y2="23"></line>
+      <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+      <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+      <line x1="1" y1="12" x2="3" y2="12"></line>
+      <line x1="21" y1="12" x2="23" y2="12"></line>
+      <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+      <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+    </svg>
+  </h2>
+  
+  <p>Temperature: <span id="temp">10</span>°F</p>
+  <p>Wind Speed: <span id="speed">5</span> mph</p>
+  <p>Wind Chill: <span id="windchill"></span></p>
+</section>
+
   </main>
 
   <footer>
