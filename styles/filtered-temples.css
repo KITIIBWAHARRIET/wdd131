@@ -17,6 +17,14 @@ nav a {
   margin: 0 0.5rem;
   color: white;
   text-decoration: none;
+  transition: color 0.3s ease, background 0.3s ease;
+  padding: 0.3rem 0.6rem;
+  border-radius: 5px;
+}
+
+nav a:hover {
+  background-color: white;
+  color: #003366;
 }
 
 .temple-gallery {
@@ -44,7 +52,7 @@ nav a {
 }
 
 footer {
-  background-color: #003366; /* same as header */
+  background-color: #003366;
   color: white;
   text-align: center;
   padding: 1rem;
