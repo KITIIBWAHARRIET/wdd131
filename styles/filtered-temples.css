@@ -59,3 +59,34 @@ footer {
   margin-top: 2rem;
   font-size: 0.9rem;
 }
+
+/* Default: hide menu on small screens */
+#nav-menu {
+  display: none;
+  flex-direction: column;
+  background-color: #003366;
+  position: absolute;
+  top: 60px; /* below header */
+  right: 0;
+  width: 200px;
+  padding: 1rem;
+}
+
+#nav-menu.open {
+  display: flex;
+}
+
+/* Hide hamburger on larger screens */
+@media (min-width: 768px) {
+  #hamburger {
+    display: none;
+  }
+  #nav-menu {
+    display: flex !important;
+    position: static;
+    flex-direction: row;
+    background: none;
+    width: auto;
+    padding: 0;
+  }
+}
