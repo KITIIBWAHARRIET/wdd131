@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="A responsive temple album page showcasing LDS temples with filters.">
+  <meta name="author" content="Harriet Kitiibwa">
+
+  <title>Filtered Temples Album</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="styles/filtered-temples.css">
+  <link rel="stylesheet" href="styles/filtered-temples-large.css">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+
+  <!-- JavaScript -->
+  <script src="scripts/filtered-temples.js" defer></script>
+</head>
+<body>
+  <header>
+    <h2>Temple Album</h2>
+    <button id="hamburger">&#9776;</button>
+    <nav id="nav-menu">
+      <a href="#" data-filter="home">Home</a>
+      <a href="#" data-filter="old">Old</a>
+      <a href="#" data-filter="new">New</a>
+      <a href="#" data-filter="large">Large</a>
+      <a href="#" data-filter="small">Small</a>
+    </nav>
+  </header>
+
+  <h1>Our Temple Collection</h1>
+
+  <main>
+    <section id="temple-gallery" class="temple-gallery">
+      <!-- JavaScript will inject temple cards here -->
+    </section>
+  </main>
+
+  <footer>
+    <p>
+      &copy; <span id="year"></span> | Harriet Kitiibwa |
+      Last modified: <span id="last-modified"></span>
+    </p>
+  </footer>
+</body>
+</html>
+
