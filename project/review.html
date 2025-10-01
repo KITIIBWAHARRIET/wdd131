@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Review Submitted</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <header>
+        <h1>Thank You for Your Review!</h1>
+    </header>
+
+    <main>
+        <p>You have submitted <span id="counter"></span> review(s).</p>
+        <a href="form.html">Submit Another Review</a>
+    </main>
+
+    <footer>
+        <p>© Brigham Young University-Idaho | All rights reserved.</p>
+    </footer>
+
+    <script>
+        let count = localStorage.getItem("reviewCount") || 0;
+        count = parseInt(count) + 1;
+        localStorage.setItem("reviewCount", count);
+        document.getElementById("counter").textContent = count;
+    </script>
+</body>
+</html>
