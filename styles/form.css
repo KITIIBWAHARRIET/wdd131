@@ -111,7 +111,7 @@ footer {
         padding: 1.5rem;
     }
 
-    input[type="submit"] {
-        width: 70%;
+   input[type="submit"] {
+       background-color: #004080;
     }
 }
