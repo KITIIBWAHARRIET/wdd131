@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TrailTrek — Site Plan</title>
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&family=Montserrat:wght@600;700&display=swap" rel="stylesheet">
+
+  <!-- External CSS (place in same folder as this HTML file) -->
+  <link rel="stylesheet" href="siteplan.css">
+
+  <meta name="description" content="Site plan for TrailTrek — a hiking trail resources website (example project for WDD131).">
+</head>
+<body>
+  <header class="site-header">
+    <!-- Inline logo (placeholder SVG) -->
+    <div class="logo" aria-hidden="false" role="img" aria-label="TrailTrek logo">
+      <svg width="88" height="88" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" focusable="false">
+        <circle cx="50" cy="50" r="48" fill="#F4A300"/>
+        <path d="M18 70 L44 28 L70 64" stroke="#ffffff" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+    </div>
+
+    <div class="site-title">
+      <h1>TrailTrek</h1>
+      <p class="subtitle">A practical hub of hiking routes, packing tips, and community-sourced trail reviews.</p>
+    </div>
+  </header>
+
+  <main class="container">
+    <!-- Naming conventions / file structure -->
+    <section id="naming" class="card">
+      <h2>1. Naming & File Structure</h2>
+      <p>Repository: <code>wdd131</code> → Subfolder for this project: <code>project/</code>.</p>
+      <ul>
+        <li><code>project/siteplan.html</code> — this document</li>
+        <li><code>project/siteplan.css</code> — styles used by this document</li>
+        <li><code>project/index.html</code>, <code>project/trails.html</code>, <code>project/contact.html</code> — planned site pages</li>
+        <li>Images stored in <code>project/images/</code> and optimized for web (lazy-loaded).</li>
+      </ul>
+    </section>
+
+    <!-- Site name and reason -->
+    <section id="sitename" class="card">
+      <h2>2. Site Name</h2>
+      <p class="lead"><strong>TrailTrek</strong></p>
+      <p><strong>Why:</strong> Memorable, descriptive, and conveys hiking/trail exploration. Works across devices and fits available domain possibilities (e.g. <em>trailtrek.org</em> — domain availability should be checked prior to purchase).</p>
+    </section>
+
+    <!-- Purpose -->
+    <section id="purpose" class="card">
+      <h2>3. Site Purpose</h2>
+      <p>The purpose of TrailTrek is to provide concise, trustworthy hiking trail information for day hikers and weekend backpackers. The site will include:</p>
+      <ul>
+        <li>Trail summaries (distance, difficulty, elevation gain, user reviews).</li>
+        <li>Packing & safety checklists and printable PDFs.</li>
+        <li>Interactive trail finder (filter by difficulty, distance, region).</li>
+        <li>Contact / volunteer sign-up form and an external resources & citations page.</li>
+      </ul>
+    </section>
+
+    <!-- Scenarios -->
+    <section id="scenarios" class="card">
+      <h2>4. Scenarios</h2>
+      <ol>
+        <li><strong>New hiker:</strong> "I have 3 hours and want a beginner-friendly trail near me — what should I pick?"</li>
+        <li><strong>Photographer:</strong> "Which trails have viewpoints at sunrise and low crowd levels?"</li>
+        <li><strong>Volunteer:</strong> "How do I sign up to help maintain trails in my county?"</li>
+      </ol>
+      <p>These questions drive content: trail metadata, searchable filters, and a clear contact/volunteer form.</p>
+    </section>
+
+    <!-- Color schema (used in doc) -->
+    <section id="colors" class="card">
+      <h2>5. Color Schema</h2>
+      <p>Two main colors + neutrals. Swatches below are used throughout this document.</p>
+      <ul class="colors-list">
+        <li><strong>Primary</strong> — Forest Green <code>#2E8B57</code> (Headings, primary CTAs, focus states)</li>
+        <li><strong>Accent</strong> — Amber <code>#F4A300</code> (Buttons, highlights, icons)</li>
+        <li><strong>Neutral</strong> — Off-white background <code>#FBFBFA</code> and dark text <code>#222222</code></li>
+      </ul>
+      <p>Usage examples: headings use <code>#2E8B57</code>, primary buttons use a filled <code>#F4A300</code>, page background uses <code>#FBFBFA</code>.</p>
+    </section>
+
+    <!-- Typography (used in doc) -->
+    <section id="typography" class="card">
+      <h2>6. Typography</h2>
+      <p>Selected web fonts (Google Fonts):</p>
+      <ul>
+        <li><strong>Montserrat</strong> — headings and UI labels (weights 600–700)</li>
+        <li><strong>Inter</strong> — body text and form inputs (weights 300–400)</li>
+      </ul>
+      <p>These are used in this document (see header and body fonts). Limit of two fonts to maintain performance and consistency.</p>
+    </section>
+
+    <!-- Wireframes -->
+    <section id="wireframes" class="card">
+      <h2>7. Wireframes</h2>
+      <p>Two simple wireframe sketches are provided below. They represent layout and content placement only (not final visuals).</p>
+
+      <h3>Mobile (portrait)</h3>
+      <!-- Simple inline SVG wireframe - mobile -->
+      <figure class="wireframe">
+        <svg viewBox="0 0 200 360" width="200" height="360" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="wfm">
+          <title id="wfm">Mobile wireframe for TrailTrek home</title>
+          <rect x="2" y="2" width="196" height="356" rx="8" fill="#fff" stroke="#ccc"/>
+          <!-- header -->
+          <rect x="14" y="18" width="172" height="30" fill="#eee"/>
+          <!-- hero -->
+          <rect x="14" y="56" width="172" height="80" fill="#f8f8f8"/>
+          <!-- search -->
+          <rect x="14" y="146" width="172" height="26" fill="#eee"/>
+          <!-- list items -->
+          <rect x="14" y="180" width="172" height="28" fill="#fafafa"/>
+          <rect x="14" y="216" width="172" height="28" fill="#fafafa"/>
+          <rect x="14" y="252" width="172" height="28" fill="#fafafa"/>
+          <!-- footer -->
+          <rect x="14" y="296" width="172" height="36" fill="#eee"/>
+          <text x="20" y="36" font-size="6" fill="#666">Header / logo</text>
+          <text x="20" y="96" font-size="6" fill="#666">Hero: featured trail image & short CTA</text>
+          <text x="20" y="158" font-size="6" fill="#666">Search / filter</text>
+        </svg>
+      </figure>
+
+      <h3>Desktop (wide)</h3>
+      <!-- Simple inline SVG wireframe - desktop -->
+      <figure class="wireframe">
+        <svg viewBox="0 0 400 260" width="400" height="260" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="wfd">
+          <title id="wfd">Desktop wireframe for TrailTrek home</title>
+          <rect x="2" y="2" width="396" height="256" rx="6" fill="#fff" stroke="#ccc"/>
+          <!-- top nav -->
+          <rect x="14" y="12" width="372" height="28" fill="#eee"/>
+          <!-- left column: filters -->
+          <rect x="14" y="52" width="100" height="180" fill="#fafafa"/>
+          <!-- right column: content -->
+          <rect x="122" y="52" width="264" height="120" fill="#f8f8f8"/>
+          <rect x="122" y="180" width="264" height="52" fill="#fafafa"/>
+          <text x="20" y="30" font-size="8" fill="#666">Top nav (logo, nav links)</text>
+          <text x="20" y="74" font-size="8" fill="#666">Filter panel</text>
+          <text x="130" y="74" font-size="8" fill="#666">Featured trail card / map</text>
+        </svg>
+      </figure>
+      <p class="hint">These wireframes show placement: header/nav, search/filter panel, featured content, and a call-to-action area. They will be refined during development.</p>
+    </section>
+
+    <!-- CSS / Accessibility / Testing notes -->
+    <section id="testing" class="card">
+      <h2>8. CSS / Accessibility / Testing</h2>
+      <ul>
+        <li>Validate HTML at <code>validator.w3.org/nu</code> and CSS at <code>jigsaw.w3.org/css-validator</code>.</li>
+        <li>Use DevTools Lighthouse for Performance, Accessibility, Best Practices, and SEO (mobile & desktop).</li>
+        <li>Check color contrast using DevTools CSS Overview or a contrast tool to ensure 4.5:1 for body text vs background.</li>
+        <li>Optimize images (compress and serve responsive sizes) and use <code>loading="lazy"</code> for non-critical images.</li>
+        <li>JS requirements (final project): multiple functions, DOM selection/modification, event listeners, conditional branching, arrays/objects and methods, template literals, localStorage — all will be implemented in the final site pages.</li>
+      </ul>
+    </section>
+
+    <!-- References & footer note -->
+    <section id="footer" class="card">
+      <h2>9. References & Footer</h2>
+      <p>All external images and data sources will be cited on a dedicated <a href="references.html">references.html</a> page linked in the site footer. That page does not need styling per project instructions.</p>
+    </section>
+  </main>
+
+  <footer class="page-footer">
+    <p>&copy; 2025 TrailTrek — Project for WDD131. <a href="references.html">References</a></p>
+  </footer>
+</body>
+</html>
